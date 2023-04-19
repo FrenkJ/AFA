@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane fx:id="registerFinePane" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2ec0ff;" text="Fine Registration" textFill="#27a0d3" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.afa.AddFineController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="licensePlateLabel" layoutX="48.0" layoutY="100.0" text="License Plate:" />
+            <TextField fx:id="licensePlateField" layoutX="126.0" layoutY="96.0" promptText="AA *** **" />
+            <TextField fx:id="ammountFinedField" layoutX="403.0" layoutY="96.0" promptText="\$" />
+            <TextField fx:id="fineReasonField" layoutX="126.0" layoutY="224.0" promptText="Speeding..." />
+            <Label fx:id="fineReasonLabel" layoutX="48.0" layoutY="228.0" text="Fine reason:" />
+            <Label fx:id="ammountFinedLabel" layoutX="290.0" layoutY="100.0" text="Ammount Fined:" />
+            <DatePicker fx:id="datePickerField" layoutX="378.0" layoutY="224.0" promptText="x/x/xxxx" style="-fx-background-color: #2ec0ff;" />
+            <Label fx:id="dateFinedlabel" layoutX="290.0" layoutY="228.0" text="Date Fined:" />
+            <Button fx:id="registerFineButton" layoutX="99.0" layoutY="306.0" mnemonicParsing="false" onAction="#registerFine" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #2ec0ff;" text="Register Fine" textFill="WHITE" />
+            <Button fx:id="rfCancelButton" layoutX="348.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchToMainScene" onDragDetected="#switchToMainScene" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #2ec0ff;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="registrationLabel" layoutX="276.0" layoutY="43.0" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
